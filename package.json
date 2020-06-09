@@ -1,0 +1,32 @@
+{
+	"name": "www.ckjblog.com",
+	"title": "wq",
+	"author": "wq",
+	"license": "MIT",
+	"version": "1.0.0",
+	"homepage": "www.ckjblog.com",
+	"keywords": [
+		"note",
+		"blog",
+		"codes"
+	],
+	"description": "",
+	"scripts": {
+		"dev": "vuepress dev docs",
+		"build": "vuepress build docs",
+		"deploy": "bash deploy.sh" 
+	},
+	"dependencies": {
+		"@iktakahiro/markdown-it-katex": "^3.1.0",
+		"@vuepress-reco/vuepress-plugin-extract-code": "^1.0.3",
+		"@vuepress/plugin-medium-zoom": "1.2.0",
+		"@vuepress/plugin-pwa": "^1.2.0",
+		"markdown-it": "^10.0.0",
+		"markdown-it-mark": "^3.0.0",
+		"markdown-it-task-lists": "^2.1.1",
+		"markdown-it-vuepress-code-snippet-enhanced": "^1.0.1",
+		"vuepress": "^1.2.0",
+		"vuepress-plugin-ribbon": "^1.0.0",
+		"vuepress-theme-reco": "^1.2.2"
+	}
+}
