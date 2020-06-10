@@ -61,7 +61,7 @@ module.exports = {
 	],
 	theme: 'reco',
 	themeConfig: {
-		repo:'https://github.com/Ckangjie/blog'
+		repo:'https://github.com/Ckangjie/blog',
 		authorAvatar: '/images/admin.gif',
 		type: 'blog',
 		logo: '/images/admin.gif',
