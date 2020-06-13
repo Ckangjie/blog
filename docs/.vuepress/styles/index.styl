@@ -203,3 +203,36 @@ body
 	width 100%
 	display block
 	
+// 导航样式
+.nav-item
+	position relative
+	
+.nav-link
+	border none !important
+	
+.nav-link:after,.nav-link:before,.dropdown-wrapper:after,.dropdown-wrapper:before
+	display block
+	content ''
+	height 1px
+	width 0
+	position absolute
+	background-color #64D9D6
+	transition 400ms ease all
+	-webkit-transition 400ms ease all
+
+.nav-link:hover:after,.nav-link:hover:before,
+.dropdown-wrapper:hover:after,.dropdown-wrapper:hover:before
+	width 100%
+	-webkit-transition 600ms ease all
+	transition 600 ease all
+
+.nav-link:after,
+.dropdown-wrapper:after
+	top 0
+	left 0
+	
+.dropdown-wrapper:before,
+.nav-link:before
+	bottom 0
+	right 0
+	
