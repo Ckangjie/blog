@@ -9,7 +9,7 @@ tags:
 ---
 
 ## 1.接收前台数据mysqldb.js
-```javascrpt
+```javascript
 let db = require('mysql')
 let express = require('express')
 let app = express()
