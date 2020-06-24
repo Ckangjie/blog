@@ -180,7 +180,7 @@ module.exports = Promise
         }
     }
 ```
-## 4.测试Promise
+## 4.测试Promise（源码）
 
 ```javascript
 // Promise
@@ -241,7 +241,7 @@ function myPromise(executor) {
                     _this.onRejectedFunc.push(() => {
                         setTimeout(() => {
                             try {
-                                let x = onRejected(_this.value)
+                                let x = onRejected(_this.reason)
                                 console.log(x)
                                 resolvePromise(newPromise, x, resolve, reject)
                             } catch (error) {
@@ -269,7 +269,7 @@ function myPromise(executor) {
                 if (typeof onRejected === 'function') {
                     setTimeout(() => {
                         try {
-                            let x = onRejected(_this.value)
+                            let x = onRejected(_this.reason)
                             resolvePromise(newPromise, x, resolve, reject)
                         } catch (error) {
                             reject(error)
@@ -312,6 +312,7 @@ function myPromise(executor) {
 }
 
 module.exports = myPromise
+
 ```
 eg:使用Promise
 ```javascript
