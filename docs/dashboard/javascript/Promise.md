@@ -14,7 +14,7 @@ tags:
 ```javascript
 // Promise
 // executor 为一个函数
-function Promise(executor) {
+function myPromise(executor) {
     var _this = this
     this.status = 'pending'//保存状态
     this.value = undefined //保存成功的结果
@@ -34,7 +34,7 @@ function Promise(executor) {
     }
 }
 
-module.exports = Promise
+module.exports = myPromise
 ```
 
 ## 2.then方法的基本实现及异步
@@ -44,7 +44,7 @@ module.exports = Promise
 ```javascript
 // Promise
 // executor 为一个函数
-function Promise(executor) {
+function myPromise(executor) {
     var _this = this
     this.status = 'pending'//保存状态
     this.value = undefined //保存成功的结果
@@ -100,7 +100,7 @@ function Promise(executor) {
 					_this.onRejectedFunc.push(() => {
 						setTimeout(() => {
 							try {
-								let x = onRejected(_this.value)
+								let x = onRejected(_this.reason)
 								console.log(x)
 								resolvePromise(newPromise, x, resolve, reject)
 							} catch (error) {
@@ -128,7 +128,7 @@ function Promise(executor) {
 				if (typeof onRejected === 'function') {
 					setTimeout(() => {
 						try {
-							let x = onRejected(_this.value)
+							let x = onRejected(_this.reason)
 							resolvePromise(newPromise, x, resolve, reject)
 						} catch (error) {
 							reject(error)
@@ -141,7 +141,7 @@ function Promise(executor) {
 	}
 }
 
-module.exports = Promise
+module.exports = myPromise
 ```
 
 ## 3. Promise链式调用
