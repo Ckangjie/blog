@@ -65,7 +65,7 @@ body
 .page
   background transparent
   // 增加文章内容块宽度（740px => 830px）
-  .page-title, 
+  .page-title,
   .content__default:not(.custom)
     max-width 830px !important
     background-color var(--background-color)
@@ -183,9 +183,9 @@ body
 // 评论框
 .comments-wrapper
 	max-width 910px !important
-	
+
 // 点击页面出现爱心
-.heart 
+.heart
 	z-index 999
 
 // 文章标题超出隐藏
@@ -198,18 +198,18 @@ body
 	-webkit-line-clamp 1  //显示文字行数
 	text-overflow ellipsis;
 	cursor pointer
-	
+
 .sidebar-group>p
 	width 100%
 	display block
-	
+
 // 导航样式
 .nav-item
 	position relative
-	
+
 .nav-link
 	border none !important
-	
+
 .nav-link:after,.nav-link:before,.dropdown-wrapper:after,.dropdown-wrapper:before
 	display block
 	content ''
@@ -230,9 +230,12 @@ body
 .dropdown-wrapper:after
 	top 0
 	left 0
-	
+
 .dropdown-wrapper:before,
 .nav-link:before
 	bottom 0
 	right 0
-	
+
+// 隐藏github链接
+.repo-link
+	display none !important
