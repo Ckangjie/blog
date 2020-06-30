@@ -11,7 +11,6 @@ tags:
 ## 1.wangEditor编辑器
  wangEditor —— 轻量级 web 富文本编辑器，配置方便，使用简单。支持 IE10+ 浏览器
 >官网 [wangeditor](http://www.wangeditor.com/)
->参考博客 https://blog.csdn.net/ligang2585116/article/details/78964349
 
 ## 2.vue使用wangEditor编辑器
 ```javascript
