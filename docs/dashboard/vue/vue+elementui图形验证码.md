@@ -160,7 +160,7 @@ export default {
 </style>
 ```
 
-##2.使用组件
+## 2.使用组件
 ```html
 <template>
 	<div @click="changeCode()">
